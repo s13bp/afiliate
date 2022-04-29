@@ -60,27 +60,22 @@ button:hover{
 }
 
 .one{
-  background: #545366;
+  background: hsl(247, 42%, 41%); 
 }
 
 .two{
-    background: linear-gradient(-45deg, #0054a4,#00adc9,#36afb5, #1b1a63);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+ 
+  animation: colorchange 22s infinite;
+
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-
-
+@keyframes colorchange {
+  0%   {background-color: #035397;}
+  25%  {background-color: #4B7BE5;}
+  50%  {background-color: #5534A5;}
+  75%  {background-color: #A85CF9;}
+  90% {background-color: #035397;}
+  100% {background-color: #035397;}
 }
 .resp {
     display: inline-block;
@@ -99,7 +94,7 @@ button:hover{
 }
 
 .four{
-  background-color: limegreen;
+  background-color: black;
 }
 
 .tooltip {
@@ -125,16 +120,17 @@ button:hover{
   .content {
     display:inline-block;
     position: relative;
-    bottom: 100px;
-    left: -25px;
+    padding-left:15px;
+    left: -270px;
     opacity: 0;
-    transition: opacity .6s ease-in;
+    transition: opacity .7s ease-in-out;
     align-content:center;
-    max-width:9vw;
-    border-radius:10px;
+    min-width:10vw;
+    max-width:10vw;
+    border-radius:6px;
     background-color:black;
     color:white;
-    padding:15px 8px;
+    padding:8px 4px;
     font-size:12px;
     text-align:left;
     
@@ -146,6 +142,9 @@ button:hover{
   }
   .content h1{
       font-size:16px;
+  }
+  .content {
+    margin-bottom:25px;
   }
 
   
@@ -162,7 +161,7 @@ button:hover{
       margin-bottom:15%;
       border-radius:7px;
       box-shadow: 5px 2px 12px rgba(0, 0, 0, 0.228);
-      transition:0.5s ease-in-out ;
+      transition:0.2s ease-in-out ;
   }
   .imgz:hover{
       transform:scale(1.33);
@@ -173,13 +172,13 @@ button:hover{
     width:100%;
   }
   .bimgz:hover{
-    transform:scale(1.02);
-    box-shadow: 5px 8px 12px rgba(0, 0, 0, 0.328);
+    transform:scale(1.01);
+    box-shadow: 5px 8px 12px rgba(0, 0, 0, 0.128);
 }
 .infosec{
   transition: .5s ;
 }
 .infosec:hover{
   transform:scale(1.01);
-  box-shadow:2px 2px 15px 1px rgba(0, 0, 0, 0.328);
+  box-shadow:2px 2px 15px 1px rgba(0, 0, 0, 0.128);
 }
