@@ -128,7 +128,8 @@ button:hover{
     min-width:10vw;
     max-width:10vw;
     border-radius:6px;
-    background-color:black;
+    background-color: rgba(0, 0, 0, 0.755);
+    backdrop-filter: blur(7px);
     color:white;
     padding:8px 4px;
     font-size:12px;
