@@ -8,7 +8,7 @@
 
 button{
   padding: 18px;
-  width: 180px;
+  width: 200px;
   border: 1px solid grey;
   background-color: transparent;
   color: lightgrey;
@@ -17,7 +17,7 @@ button{
   transition: 0.3s ease-out;
   margin:0 4em;
   font-size:20px;
-  letter-spacing: 2.5px;
+  letter-spacing: .5px;
 }
 
 button:hover{
@@ -56,8 +56,34 @@ button:hover{
   
 }
 .five{
-    background:yellow;
+    background:darkblue;
 }
+.seller {
+  display: grid;
+  grid-template-columns: 10% repeat(4, 20%) 10%;
+  grid-template-rows: repeat(9, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width:100%;
+  height:90vh;
+ 
+  }
+  .left:hover{
+    -webkit-box-shadow: 0px 0px 22px 6px rgba(0,0,0,0.29);
+    -moz-box-shadow: 0px 0px 22px 6px rgba(0,0,0,0.29);
+    box-shadow: 0px 0px 22px 6px rgba(0,0,0,0.29);
+  }
+  
+  .left { grid-area: 2 / 2 / 9 / 4;
+    padding:20px;
+    border-radius:10px;
+    height:fit-content;
+    transition: 0.3s ease-out;
+   }
+  .left p {
+    padding:20px 170px 20px 0px;
+  }
+  .right { grid-area: 7 / 5 / 9 / 6; }
 
 .one{
   background: hsl(247, 42%, 41%); 
@@ -182,4 +208,14 @@ button:hover{
 .infosec:hover{
   transform:scale(1.01);
   box-shadow:2px 2px 15px 1px rgba(0, 0, 0, 0.128);
+}
+#dropContainer{
+  border:1px solid white;
+  height:300px; 
+  width: 60vw;
+}
+#dropContainer p{
+  display:block;
+  text-align: center;
+  margin-top:20%;
 }
